@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primaryColor: #5C6BC0;
+    --secondaryColor: #FF8A65;
+    --bgColor: #F5F5F5;
+    --textColor: #333333;
+    --accentColor: #FFD54F;
+    --borderColor: #AAAAAA;
+}
+
 html{
     font-size: 62.5%;
 }
@@ -13,4 +22,41 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
+    background: var(--bgColor);
+    color: var(--textColor);
+    height: 100vh;
+}
+
+h1{
+    color: var(--primaryColor);
+}
+
+.btn-main{
+    color: var(--bgColor);
+    background-color: var(--primaryColor);
+    border-color: var(--primaryColor);
+    font-size: 1.4rem;
+}
+
+.btn-main:hover {
+    color: var(--bgColor);
+}
+
+.form-label{
+    font-size: 1.3rem;
+}
+
+.form-control{
+    border-color: var(--secondaryColor);
+}
+
+.main-box, .code-area{
+    border: 1px solid var(--secondaryColor);
+    /* border-radius: 0.25rem; */
+    height: 40rem;
+    width: 40rem;
+}
+
+.main-box{
+    background: var(--primaryColor);
 }
