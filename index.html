@@ -19,36 +19,52 @@
             </div>
         </div>
         <div class="row pb-5">
-            <div class="col">
-                <label for="inputTopLeft" class="form-label">Top Left</label>
-                <input type="number" id="inputTopLeft" class="form-control">
+            <div class="col-4">
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <label for="inputTopLeft" class="form-label">Top Left</label>
+                        <input type="text" id="inputTopLeft" class="form-control">
+                        <small id="tl" style="display: none;">Enter a valid number with unit (px, %, rem, em)</small>
+                    </div>
+                    <div class="col-6">
+                        <label for="inputTopRight" class="form-label">Top Right</label>
+                        <input type="text" id="inputTopRight" class="form-control">
+                        <small id="tr" style="display: none;">Enter a valid number with unit (px, %, rem, em)</small>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <label for="inputBottomLeft" class="form-label">Bottom Left</label>
+                        <input type="text" id="inputBottomLeft" class="form-control">
+                        <small id="bl" style="display: none;">Enter a valid number with unit (px, %, rem, em)</small>
+                    </div>
+                    <div class="col-6">
+                        <label for="inputBottomRight" class="form-label">Bottom Right</label>
+                        <input type="text" id="inputBottomRight" class="form-control">
+                        <small id="br" style="display: none;">Enter a valid number with unit (px, %, rem, em)</small>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <button type="button" id="reset" class="btn btn-main btn-lg">Reset</button>
+                </div>
+                <div class="row">
+                    <div class="col code-area">
+                        <code id="code">
+                            border-radius: 0px 0px 0px 0px; <br>
+                            -moz-border-radius: 0px 0px 0px 0px; <br>
+                            -webkit-border-radius: 0px 0px 0px 0px;
+                        </code>
+                        <button type="button" id="copy" class="btn btn-main btn-lg mt-4">Copy CSS</button>
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <label for="inputTopRight" class="form-label">Top Right</label>
-                <input type="number" id="inputTopRight" class="form-control">
+            <div class="col-2"></div>
+            <div class="col-6 main-box">
+                <div class="tl">Top Left</div>
+                <div class="tr">Top Right</div>
+                <div class="bl">Bottom Left</div>
+                <div class="br">Bottom Right</div>
             </div>
-            <div class="col">
-                <label for="inputBottomLeft" class="form-label">Bottom Left</label>
-                <input type="number" id="inputBottomLeft" class="form-control">
-            </div>
-            <div class="col">
-                <label for="inputBottomRight" class="form-label">Bottom Right</label>
-                <input type="number" id="inputBottomRight" class="form-control">
-            </div>
-            <div class="col align-self-end text-center">
-                <button type="button" class="btn btn-main btn-lg">Reset</button>
-            </div>
-        </div>
-        <div class="row pb-5 justify-content-center">
-            <div class="col-1"></div>
-            <div class="col main-box">
-                
-            </div>
-            <div class="col-1"></div>
-            <div class="col code-area">
-        
-            </div>
-            <div class="col-1"></div>
         </div>
     </div>
 

@@ -47,16 +47,52 @@ h1{
 }
 
 .form-control{
-    border-color: var(--secondaryColor);
+    border-color: var(--borderColor);
 }
 
-.main-box, .code-area{
-    border: 1px solid var(--secondaryColor);
+.main-box{
+    border: 2px solid var(--borderColor);
     /* border-radius: 0.25rem; */
     height: 40rem;
-    width: 40rem;
+    max-width: 40rem;
 }
 
 .main-box{
     background: var(--primaryColor);
+    position: relative;
+}
+
+.tl, .tr, .bl, .br{
+    position: absolute;
+    font-size: 1.1rem;
+}
+
+.tl{
+    left: -5rem;
+}
+
+.tr{
+    right: -6rem;
+}
+
+.bl{
+    left: -7rem;
+    bottom: 0;
+}
+
+.br{
+    right: -8rem;
+    bottom: 0;
+}
+
+.code-area{
+    border: 1px solid var(--borderColor);
+    border-radius: 0.25rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+small{
+    color: red;
+    font-size: 1.1rem;
 }
