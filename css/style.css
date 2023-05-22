@@ -52,7 +52,6 @@ h1{
 
 .main-box{
     border: 2px solid var(--borderColor);
-    /* border-radius: 0.25rem; */
     height: 40rem;
     max-width: 40rem;
 }
@@ -97,15 +96,20 @@ small{
     font-size: 1.1rem;
 }
 
-code {
-    font-size: .875em;
-    color: #d63384;
-    word-wrap: break-word;
-}
-
-code, kbd, pre, samp {
-    font-family: var(--bs-font-monospace);
-    font-size: 1em;
-    direction: ltr;
-    unicode-bidi: bidi-override;
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 50%;
+    }
+    .main-box{
+        height: 30rem;
+        max-width: 30rem;
+        margin: auto;
+    }
+    .btnReset{
+        text-align: center;
+    }
+    .code-area{
+        margin-top: 0;
+        margin: auto;
+    }
 }
