@@ -3,13 +3,16 @@ const topRight = document.getElementById('inputTopRight')
 const bottomLeft = document.getElementById('inputBottomLeft')
 const bottomRight = document.getElementById('inputBottomRight')
 const btnReset = document.getElementById('reset')
+const btnCopy = document.getElementById('copy')
 const main = document.querySelector('.main-box')
 const code = document.querySelector('.code-area code')
+const errorMessages = document.querySelectorAll('.errorMessage')
+const inputs = document.querySelectorAll('.input')
 const pattern = /^[0-9]+(px|%|rem|em)$/
-let tl = 0;
-let tr = 0;
-let bl = 0;
-let br = 0;
+let tl = '';
+let tr = '';
+let bl = '';
+let br = '';
 
 topLeft.addEventListener('input', function (e) {
   const isValid = validateInput(this, 'tl')
@@ -67,3 +70,29 @@ function updateCode(lt, rt, rb, lb) {
   `
   code.insertAdjacentHTML('afterbegin', html)
 }
+
+btnReset.addEventListener('click', function(e){
+  topLeft.value = topRight.value = bottomLeft.value = bottomRight.value = ''
+  errorMessages.forEach(err => {
+    err.style.display = "none";
+  })
+  inputs.forEach(input => {
+    input.style.borderColor = 'initial'
+  })
+})
+
+btnCopy.addEventListener('click', function(){
+  const text = code.textContent;
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      code.style.backgroundColor = '#FF8A65';
+      code.style.color = '#333333'
+      setTimeout(() => {
+        code.style.backgroundColor = ''; 
+        code.style.color = '';
+      }, 1000);
+    })
+    .catch((err) => {
+      console.error('Failed to copy text: ', err);
+    });
+})

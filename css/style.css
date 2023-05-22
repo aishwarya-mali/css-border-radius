@@ -96,3 +96,16 @@ small{
     color: red;
     font-size: 1.1rem;
 }
+
+code {
+    font-size: .875em;
+    color: #d63384;
+    word-wrap: break-word;
+}
+
+code, kbd, pre, samp {
+    font-family: var(--bs-font-monospace);
+    font-size: 1em;
+    direction: ltr;
+    unicode-bidi: bidi-override;
+}
