@@ -112,4 +112,7 @@ small{
         margin-top: 0;
         margin: auto;
     }
+    .main-container{
+        padding: 3rem;
+    }
 }
