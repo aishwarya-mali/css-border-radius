@@ -2,13 +2,17 @@ const topLeft = document.getElementById('inputTopLeft')
 const topRight = document.getElementById('inputTopRight')
 const bottomLeft = document.getElementById('inputBottomLeft')
 const bottomRight = document.getElementById('inputBottomRight')
+
 const btnReset = document.getElementById('reset')
 const btnCopy = document.getElementById('copy')
+
 const main = document.querySelector('.main-box')
 const code = document.querySelector('.code-area code')
 const errorMessages = document.querySelectorAll('.errorMessage')
 const inputs = document.querySelectorAll('.input')
+
 const pattern = /^[0-9]+(px|%|rem|em)$/
+
 let topLeftValue = '';
 let topRightValue = '';
 let bottomLeftValue = '';
