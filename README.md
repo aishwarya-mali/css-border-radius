@@ -3,7 +3,9 @@
 
 This is a user-friendly tool that helps you preview and customize border-radius values for your elements in a visual and interactive way.
 
-Link to site: https://styles-border-radius.netlify.app/
+## Demo
+
+https://styles-border-radius.netlify.app/
 
 ## Features
 
@@ -15,10 +17,12 @@ Link to site: https://styles-border-radius.netlify.app/
 
 ## Tech Stack
 
-HTML5, CSS3, JavaScript
+- HTML5
+- CSS3
+- JavaScript
 
 
-## Run Locally
+## Local Development Setup
 
 Clone the project
 
